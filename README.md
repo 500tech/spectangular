@@ -22,7 +22,7 @@ angular.module('myApp', ['500tech.spectangular', ...]);
 ```
 
 And there you go!!
-<br><b>By default, spectangular only works if the page is localhost or 127.0.0.1.</b>
+<br><b>By default, spectangular only works if the page is localhost, 127.0.0.1 or lvh.me</b>
 
 Further configuration:
 ---------------------
