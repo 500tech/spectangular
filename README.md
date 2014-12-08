@@ -16,6 +16,11 @@ Add reference to dist/spectangular.js after angular.js in your main html file:
 <script src="angular.js"></script>
 <script src="bower_components/dist/spectangular.js"></script>
 ```
+Add 500tech.spectangular module as a dependency
+```javascript
+angular.module('myApp', ['500tech.spectangular', ...]);
+```
+
 And there you go!!
 <br><b>By default, spectangular only works if the page is localhost or 127.0.0.1.</b>
 
