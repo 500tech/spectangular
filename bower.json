@@ -1,0 +1,28 @@
+{
+  "name": "spectangular",
+  "version": "0.0.1",
+  "authors": [
+    "adam@500tech.com"
+  ],
+  "description": "Just press shift-click on every element on the screen to view it's context",
+  "main": "dist/spectangular.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "development",
+    "helper",
+    "scope",
+    "spectangular",
+    "element"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
