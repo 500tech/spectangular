@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script src="angular.js"></script>
+		<script src="angular-route.js"></script>
+		<script src="spectangular.js"></script>
+		<script src="app.js"></script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body ng-app="spectangularDemo"> 
+		<header ng-controller="headerCtrl as headerVm">
+			<a href="#/page1">Page 1</a>
+			<a href="#/page2">Page 2</a>
+			<h4>{{headerVm.title}}</h4>
+			<p>{{headerVm.subtitle}}</p>
+		</header>
+		<ng-view></ng-view>
+	</body>
+	<script type="text/ng-template" id="page1">
+		<h1>{{page1Vm.title}}</h1>
+		<button ng-click="page1Vm.onClick()">Click Me</button>
+	</script>
+	<script type="text/ng-template" id="page2">
+		<h1>{{page2Vm.title}}</h1>
+		<div demo-directive></div>
+	</script>
+</html>
