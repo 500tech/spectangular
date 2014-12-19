@@ -12,6 +12,9 @@ angular.module('spectangularDemo', ['ngRoute', '500tech.spectangular'])
 				controllerAs: 'page2Vm'
 			});
 	})
+	.config(function (spectangularProvider) {
+		spectangularProvider.domain('spectangulardemo.herokuapp.com');
+	})
 	.controller('headerCtrl', function() {
 		this.title = "Shift + click on any element to view its scope"
 		this.subtitle = "Tip: Click on things inside the opened window to console.log it"
