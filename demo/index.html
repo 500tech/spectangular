@@ -4,18 +4,34 @@
 		<script src="angular-route.js"></script>
 		<script src="spectangular.js"></script>
 		<script src="app.js"></script>
-		<style type="text/css">
-			
-		</style>
+		<link href="foundation.min.css" rel="stylesheet"></link>
 	</head>
 	<body ng-app="spectangularDemo"> 
-		<header ng-controller="headerCtrl as headerVm">
-			<a href="#/page1">Page 1</a>
-			<a href="#/page2">Page 2</a>
-			<h4>{{headerVm.title}}</h4>
-			<p>{{headerVm.subtitle}}</p>
-		</header>
-		<ng-view></ng-view>
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+				<li class="name">
+			      <h1><a href="/">Spectangular Demo</a></h1>
+			    </li>
+			</ul>
+			<section class="top-bar-section">
+				<ul class="left">
+					<li><a href="#/page1">Page 1</a></li>
+					<li><a href="#/page2">Page 2</a></li>
+				</ul>
+			</section>
+			</ul>
+		</nav>
+		<div class="panel callout radius"  ng-controller="headerCtrl as headerVm">
+			<h4>
+				Navigate to different pages above<br><br>
+				{{headerVm.title}}<br><br>
+				{{headerVm.subtitle}}<br><br>
+				Tip: Navigate between the scopes by clicking the search icon
+			</h4>
+		</div>
+		<div class="panel">
+			<ng-view></ng-view>
+		</div>
 	</body>
 	<script type="text/ng-template" id="page1">
 		<h1>{{page1Vm.title}}</h1>

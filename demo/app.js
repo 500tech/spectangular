@@ -13,8 +13,8 @@ angular.module('spectangularDemo', ['ngRoute', '500tech.spectangular'])
 			});
 	})
 	.controller('headerCtrl', function() {
-		this.title = "Shift click anywhere on the page to view the scope and current routes"
-		this.subtitle = "Clicking on anything inside the opened window will console.log it"
+		this.title = "Shift + click on any element to view its scope"
+		this.subtitle = "Tip: Click on things inside the opened window to console.log it"
 	})
 	.controller('page1Ctrl', function () {
 		this.title = "I live in page1Vm";
