@@ -3,7 +3,7 @@ spectangular
 
 Press shift-click on every element on the screen to view it's angular context
 
-[Live Demo](https://www.herokuapp.com/spectangular "Spectangular Live Demo")
+[Live Demo](https://spectangulardemo.herokuapp.com "Spectangular Live Demo")
 
 Installation:
 ------------
